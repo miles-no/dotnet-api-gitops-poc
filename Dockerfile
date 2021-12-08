@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 as build
 
 WORKDIR /src/Dotnet.Api
 
@@ -15,7 +15,7 @@ RUN dotnet publish ./Dotnet.Api.csproj \
     /p:TrimMode=Link \
     /p:PublishSingleFile=true 
 
-FROM mcr.microsoft.com/dotnet/runtime-deps:5.0-alpine AS publish
+FROM mcr.microsoft.com/dotnet/runtime-deps:6.0-alpine AS publish
 
 # Run as non-root
 RUN adduser --disabled-password \
