@@ -1,0 +1,1 @@
+# dotnet-api-gitops-poc
