@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Oj1pK+arRjnSQpTxIq95l+CW0/YtgQNRjnolGqTaUmU=",
+  "Source": "Dotnet.Api",
+  "BasePath": "_content/Dotnet.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
