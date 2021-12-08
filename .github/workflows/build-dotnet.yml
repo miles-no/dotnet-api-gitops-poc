@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  BASE_PATH: app # The base path for the project files
+  BASE_PATH: . # The base path for the project files
   VERSION_MAJOR: 1 # The major version
   VERSION_MINOR: 0 # The minor version
   DOCKER_IMAGE: ${{ github.repository }} # The image to build
