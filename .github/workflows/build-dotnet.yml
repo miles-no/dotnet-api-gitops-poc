@@ -31,7 +31,7 @@ jobs:
 
     - name: Build and push
       env:
-        DOCKER_TAG: "${{ env.VERSION_MAJOR }}.${{ env.VERSION_MINOR }}.${{ env.GITHUB_RUN_NUMBER }}"
+        DOCKER_TAG: "${{ env.VERSION_MAJOR }}.${{ env.VERSION_MINOR }}.${{ github.run_number }}"
         DOCKER_IMAGE: "${{ env.CONTAINER_REGISTRY }}/${{ github.repository }}" # The image to build
       run: |
         docker pull $DOCKER_IMAGE:latest || true
